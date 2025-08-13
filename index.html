@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lady Banx Restaurant — Home</title>
+  <link rel="icon" href="data:;base64,=" />
+  <style>
+    :root{--accent:#d35400;--bg:#fff7f1;--card:#fff;--muted:#555}
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:var(--bg);color:#222}
+    header{background:linear-gradient(90deg,#fff 0%,#ffeae0 100%);padding:18px 24px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:48px;height:48px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:flex;gap:32px;align-items:center;padding:56px 24px}
+    .hero .left{max-width:640px}
+    h1{font-size:36px;margin:0 0 8px}
+    p.lead{margin:6px 0 18px;color:var(--muted)}
+    .cta{background:var(--accent);color:white;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    footer{padding:18px 24px;text-align:center;color:var(--muted);font-size:14px}
+    .menu-preview ul{list-style:none;padding:0;margin:0}
+    .menu-preview li{padding:10px 0;border-bottom:1px dashed #f0d8cc}
+    a.nav-active{color:#111}
+    @media(max-width:720px){h1{font-size:28px}.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">LB</div>
+      <div>
+        <div style="font-weight:800">LADY BANX</div>
+        <div style="font-size:12px;color:var(--muted)">Home-cooked taste • Fast smiles</div>
+      </div>
+    </div>
+    <nav>
+      <a class="nav-active" href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="left">
+        <h1>Welcome to Lady Banx — Mbale's favorite spot for chicken stew and vibes</h1>
+        <p class="lead">Comfort food made with love. Fast service, unbeatable stew, and a cozy place to hang. Open daily from 10:00 — 22:00.</p>
+        <a class="cta" href="menu.html">See the menu</a>
+
+        <div class="cards">
+          <div class="card">
+            <strong>Today's Special</strong>
+            <p style="margin:8px 0 0">Chicken stew served with matooke — UGX 12,000</p>
+          </div>
+          <div class="card">
+            <strong>Family Pack</strong>
+            <p style="margin:8px 0 0">Feeds 4 — UGX 42,000</p>
+          </div>
+          <div class="card">
+            <strong>Quick Pickup</strong>
+            <p style="margin:8px 0 0">Order ahead and collect in 10 min</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-preview">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Chicken stew" style="width:320px;border-radius:12px;object-fit:cover">
+        <ul style="margin-top:12px">
+          <li><strong>Chicken Stew</strong> — 12,000 UGX</li>
+          <li><strong>Beef Pilau</strong> — 14,000 UGX</li>
+          <li><strong>Chapati & Beans</strong> — 6,000 UGX</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Lady Banx Restaurant — Mbale • Open daily 10:00–22:00
+  </footer>
+</body>
+</html>
